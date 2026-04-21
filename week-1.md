@@ -11,16 +11,21 @@ TBD
 TBD
 
 ## Rust
+
+```
 rustc main.rs // compile
 ./main
+```
+
 ### Use Cargo
+
+```
 cargo new "example" // build new rust project 
 cargo run // run rust project (auto debug) 
 cargo run --release // smaller and faster (not debug)
 cargo check // check if code compiles but don't build binary
+```
 
 Rust binaries contain the std library, leading to bigger sizes, because of generics.
 Generics are basically type inferencing in Haskell(?), and Rust uses a monomorphism to generate
 generics for the optimization of your code
-
-## 
