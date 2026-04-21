@@ -23,7 +23,7 @@ the structs self and return values based on the names and types provided by said
 Rust allows you to define types called "enums" which enumerate possible values.
 Enums are a feature in many languages, but their capabilities differ in each language. Rust's enums are most similar to algebraic data types in functional languages, such as F#, OCaml, and Haskell.
 Useful in combination with enums is Rust's "pattern matching" facility, which makes it easy to run different code for different values of an enumeration.
-
+```
 fn process(&mut self, enum: Enum) {
         // Create a match expression to process the different Enum
         // variants using the methods defined above.
@@ -35,12 +35,13 @@ fn process(&mut self, enum: Enum) {
             Enum::Variant => self.variant(),
         }
     }
-
+```
 ### Strings
 Rust has two string types, a string slice (`&str`) and an owned string (`String`).
 Each string type is capable of different things, see documentation for differences honestly
 
 ### Modules
+```
 mod module {
     fn some_function <- private
     pub fn some_function <- public
@@ -60,6 +61,7 @@ mod module {
         pub const D: &str = "d"; <- private here
     }
 }
+```
 
 Use the `use` keyword to bring module paths from modules from
 anywhere and especially from the standard library into scope.
@@ -67,7 +69,9 @@ use std::time::{SystemTime, UNIX_EPOCH}; <- example
 
 ### Hashmaps
 A *hash map* allows you to associate a value with a particular key.
+```
 let mut name = HashMap::<val, val>::new(); <- instantiate hashmap
+```
 
 ### Options
 Type Option represents an optional value: every Option is either Some and contains a value, or None, and does not.
