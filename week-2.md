@@ -4,17 +4,23 @@ Got sick so just focusing on reading and Rustlings, first paper reading due next
 Do up to and including rustlings 13_error_handling
 ### Structs
 Regular - 
+```
     struct RegularStruct {
         name: type,
         ...,
         name: type,
     }
+```
 
 Tuple - 
+```
     struct TupleStruct(type,..., type);
+```
 
 Unit - 
+```
     struct UnitStruct;
+```
 
 You can implement logic using a struct by passing a function (with correct inputs) a reference to
 the structs self and return values based on the names and types provided by said struct
@@ -23,6 +29,7 @@ the structs self and return values based on the names and types provided by said
 Rust allows you to define types called "enums" which enumerate possible values.
 Enums are a feature in many languages, but their capabilities differ in each language. Rust's enums are most similar to algebraic data types in functional languages, such as F#, OCaml, and Haskell.
 Useful in combination with enums is Rust's "pattern matching" facility, which makes it easy to run different code for different values of an enumeration.
+
 ```
 fn process(&mut self, enum: Enum) {
         // Create a match expression to process the different Enum
@@ -36,11 +43,13 @@ fn process(&mut self, enum: Enum) {
         }
     }
 ```
+
 ### Strings
 Rust has two string types, a string slice (`&str`) and an owned string (`String`).
 Each string type is capable of different things, see documentation for differences honestly
 
 ### Modules
+
 ```
 mod module {
     fn some_function <- private
@@ -69,6 +78,7 @@ use std::time::{SystemTime, UNIX_EPOCH}; <- example
 
 ### Hashmaps
 A *hash map* allows you to associate a value with a particular key.
+
 ```
 let mut name = HashMap::<val, val>::new(); <- instantiate hashmap
 ```
