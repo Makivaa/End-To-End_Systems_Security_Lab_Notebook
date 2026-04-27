@@ -1,5 +1,5 @@
 # Overview
-TODO
+First reading assigned, unable to attend all hands due to Boston trip, doing rustlings from airport mistake :(
 ## Rustlings
 Do up to and including rustlings 18_iterators
 ### Generics 
@@ -65,7 +65,7 @@ struct Book<'a> {
 General information for testing code, it should be noted there are multiple types of asserts
 
 ```
-assert!(fn(val_1) == val_2); <- Assert something is equal within statement
+assert!(fn(val_1) == val_2); <- Assert something within statement
 assert_eq!(fn(val_1), val_2); <- Assert val_1 equal val_2
 ```
 
@@ -80,8 +80,8 @@ TODO
 ### Brief summary
 TODO
 
-### List the major contributions (what is it that's novel) compared to previous work
+### Major Contributions 
 TODO
 
-### Strengths / Weaknesses of their approach
+### Strengths/Weaknesses of Approach
 TODO
