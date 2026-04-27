@@ -96,8 +96,6 @@ Option types are very common in Rust code, as they have a number of uses:
 - Nullable pointers
 - Swapping things out of difficult situationss
 
-While let Some nesting and if let Some nesting explained???
-
 ### Error Handling
 Most errors aren't serious enough to require the program to stop entirely.
 Sometimes, when a function fails, it's for a reason that you can easily interpret and respond to.
