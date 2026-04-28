@@ -70,18 +70,33 @@ assert_eq!(fn(val_1), val_2); <- Assert val_1 equal val_2
 ```
 
 ### Iterators
-TODO
+They're iterators, not actually sure what else to say
+Using collect is apparently one of the only scenarios in Rust in which you need to explicitly declare a type
+
+
+## CLI Project
+Basic Rust project involving command line arguments, create a limited version of Grep
+[Link](https://rust-book.cs.brown.edu/ch12-00-an-io-project.html)
+
 
 ## Reading - Arrakis: The Operating System is the Control Plane
 
 ### Questions
-TODO
+RDMA Implementation use case?
+Compare to different style of network packaging?
+Library vs Monolithic OS?
 
 ### Brief summary
-TODO
+Remove I/O from the kernel and move it to user space
+
+NIC - Network Interface Card:
+    Convert logical packet data into radio signals for router
+
+App -> Kernel TCPIP -> NIC (Not Arrakis)
+App -> NIC (Arrakis)
+
+Since the NIC is responsible for all network messages, applications could have access to all infomration
+Workaround - Virtualize space within the NIC (VNIC) wherein each VNIC communicates with designated app 
 
 ### Major Contributions 
-TODO
-
-### Strengths/Weaknesses of Approach
-TODO
+VNIC
