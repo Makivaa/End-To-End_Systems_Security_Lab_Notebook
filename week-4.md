@@ -7,13 +7,13 @@ Do up to and including 20_threads
 In Rust, smart pointers are variables that contain an address in memory and reference some other data, but they also have additional metadata and capabilities.
 Smart pointers in Rust often own the data they point to, while references only borrow data.
 
-Rc<T> - Stands for reference counted and allows multiple owners of a single resource ?
+Rc<T> - Stands for reference counted and allows multiple owners of a single resource
 ```
 let resource = Rc::new(resource);
 let owner_1 = enum::value_1(Rc::clone(&resource));
 let owner_2 = enum::value_2(Rc::clone(&resource));
 ```
-Arc - Thread safe version of Rc ?
+Arc - Thread safe version of Rc
 ```
 let shared_resource = Arc::new(resource);
 let child_resource = Arc::clone(&resource);

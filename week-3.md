@@ -80,6 +80,7 @@ Basic Rust project involving command line arguments, create a limited version of
 
 
 ## Reading - Arrakis: The Operating System is the Control Plane
+https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-peter_simon.pdf
 
 ### Questions
 RDMA Implementation use case?
