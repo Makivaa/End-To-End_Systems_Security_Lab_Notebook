@@ -9,11 +9,14 @@ https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-941.pdf
 
 ### Brief summary
 CHERI (Capability Hardware Enhanced RISC Instructions) is meant to be a sidekick to current ISA by extending their capabilites when it comes to memory protection. The key of CHERI is the transition from traditional integer pointers to capabilites, which while pointer like are descriptions of permissions that "refer to data, code, and objects in protected ways." A capability contains a validity tag, bounds, permissions, and object type. These track whether the capability can be used in load/stores/IF, the area of address space the capability is authorized for loads/stores/IF, how restricted the capability is in terms of loads/stores/IF, and whether the capability is sealed thus not being able to be modified or dereferenced. It should be noted that CHERI capabilities are 2 times the size of regular instructions for the given ISA.
+
 A large takeaway from this paper for me was the idea of capability monotonicity, which is the principle that "when any instruction constructs a new capability (except in sealed capability manipulation and exception raising), it cannot exceed the permissions and bounds of the capability from which it was derived." This is, or shouold be, an inherently safe way of contstructing a pointer substitute such that you have very fine control over which areas of memory they may be able to access.
+
 Yet another important point of the CHERI architecture is that it's "modular." As CHERI is meant to be an extension of existing ISA's it can be used across a variety of systems and so called CHERI Aware code is portable across underlying architectures.
 
 ### List the major contributions (what is it that's novel) compared to previous work
 The entire concept of extending conventional ISAs seems novel to me, but that may be due to my lack of experience with CS research papers. They also seemed dedicated to getting a full working prototype for CHERI software to an extent I've not seen in previous papers, even getting adaptions of Clang and FreeBSD working in their software stack. 
+
 One of the more novel things for me to read about was the Sail and L3 languages for ISA specification and how usefule it seemed to be for documentation and test cases (at the very least). There was also the "machine-checked Isabelle proof" they used to mathematically prove their language was secure, which although briefly mentioned seemed incredibly interesting. 
 
 ### Strengths / Weaknesses
