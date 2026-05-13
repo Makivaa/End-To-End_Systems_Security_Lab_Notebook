@@ -3,6 +3,7 @@ Hard deadline lab assignment next Tuesday, An Introduction to CHERI reading ch 1
 
 ## Lab Assignment
 ### Summary
+See week-6.md
 
 ## CHERI Reading 
 https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-941.pdf
@@ -35,3 +36,6 @@ There seems to be subsantial overlap between CHERI and Twizzler, is that the cas
 Would extending the ISA length mess with thread safety? How do Twizzler threads work?
 
 ## Reflection
+The CHERI paper was incredibly interesting and properly annotating was a game changer. There were a couple points during the reading where I absolutely had to google something due to me not knowing the term or needing background information, and being able to mark those points and insert definitions was very helpful.
+
+I finished the lab assignment during week 7 so the majority of my reflection on that will be during that weeks entry. However, Rust is an interesting language for sure. I didn't realize how well you need to plan your code out in advance and I approached the project the same way I would a C/C++ assignment. That was a bad idea, I should have but a lot more forethought into building the skeleton of the program before writing any functional code, but you live and you learn.
